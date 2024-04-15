@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".ManagementFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 월"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/totalNumberMonday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  개 "
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 화"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/totalNumberTuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  개 "
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 수"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/totalNumberWednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  개 "
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 목"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/totalNumberThursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  개 "
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 금"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/totalNumberFriday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  개 "
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 토"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/totalNumberSaturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  개 "
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 일"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/totalNumberSunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  개 "
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="요일 : "
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/managementListSpinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorAdd"
+                android:text="리셋"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/managementAddButton"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorAdd"
+                android:text="추가"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/barcodeTextView"
+                    android:layout_width="273dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:hint="바코드 스캔 버튼"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/itemNameEditText"
+                android:layout_width="273dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_shopping_basket_black_24dp"
+                android:drawableStart="@drawable/ic_shopping_basket_black_24dp"
+                android:hint="물품명"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/priceEditText"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+                    android:drawableStart="@drawable/ic_attach_money_black_24dp"
+                    android:hint="가격"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/amountEditText"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/ic_filter_1_black_24dp"
+                    android:drawableStart="@drawable/ic_filter_1_black_24dp"
+                    android:hint="수량"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <RadioGroup
+            android:id="@+id/itemBuyOrYetGroup"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/YET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="YET" />
+
+            <RadioButton
+                android:id="@+id/BUY"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BUY" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="총 가격"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="00원"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/colorBackground"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/itemListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/colorBackground"
+            android:background="@color/colorBackground"
+            android:dividerHeight="5dp"
+            android:padding="5dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

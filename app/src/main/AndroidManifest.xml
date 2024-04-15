@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.shopping">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo3"
+        android:label="바코드 장바구니 메모장"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Splashscreen"
+            android:label="바코드 장바구니 메모장">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" /> // 처음에 나오는 화면
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" /> // 처음 화면 나온 후 두 번째로 나오는 화면
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Pop"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity
+            android:name=".Barcode"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".BarcodeSearch"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".CustomScannerActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="landscape"></activity>
+    </application>
+
+</manifest>

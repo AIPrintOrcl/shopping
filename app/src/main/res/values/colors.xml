@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d7b5a3</color>
+    <color name="colorPrimaryDark">#c19076</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorWarning">#ED00CB</color>
+    <color name="colorGray">#8C8C8C</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlue">#2441ff</color>
+    <color name="colorDanger">#9b2b1c</color>
+    <color name="colorRed">#FF1212</color>
+    <color name="colorSafe">#08C904</color>
+    <color name="colorGold">#EEEE00</color>
+    <color name="colorSilver">#CCCCCC</color>
+    <color name="colorCopper">#888800</color>
+    <color name="colorBackground">#ecdad7</color>
+    <color name="colorItemRace">#ffffff</color>
+    <color name="colorAdd">#25528e</color>
+    <color name="colorListYETorBUY">#d22c29</color>
+    <color name="colorListName">#ecdad7</color>
+    <color name="colorListBackground">#e7cbb0</color>
+</resources>
